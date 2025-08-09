@@ -10,7 +10,7 @@ Developed as part of the **Cyber Security and Digital Forensics (CSDF)** curricu
 
 # Installation
 ```bash\terminal  
-**1. Clone Repository:**  git clone https://github.com/shashank7770/email-header-analyzer.git
-**2. Path:** cd email-header-analyzer
-**3. Install Dependencies:** pip install -r requirements.txt
-**4. Run the Project:** python app.py
+git clone https://github.com/shashank7770/email-header-analyzer.git
+cd email-header-analyzer
+pip install -r requirements.txt
+python app.py
