@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LP-IV : CSDF : Pr.1</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+    <div class="header-row">
+        <i class="fa fa-envelope" style="font-size:36px; margin-right: 10px;"></i>
+        <h2>Email Header Analyzer</h2>
+    </div>
+    <form method="POST" action="/analyze">
+        <label for="email_header">Paste Raw Email Header:</label>
+        <textarea name="email_header" id="email_header" placeholder="Step 1: Open the Email which you want to analyze the header.
+        Step 2: Click on the right side three vertical dots(more) and select 'Show Original'.
+        Step 3: New tab will open then copy the header information by clicking on 'Copy to clipboard'.
+        Step 4: Copy the header information and click on analyze button" required></textarea>
+        <br>
+        <button type="submit">Analyze</button>
+    </form>
+</div>
+<footer>
+    <p>&copy; 2025 Email Header Analyzer.</p>
+</footer>
+</body>
+</html>

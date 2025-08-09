@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Analysis Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Parsed Email Header</h2>
+        <table>
+            {% for key, value in data.items() %}
+            <tr>
+                <th>{{ key }}</th>
+                <td>
+                    {% if value is iterable and not value|string %}
+                        <ul>{% for item in value %}<li>{{ item }}</li>{% endfor %}</ul>
+                    {% else %}
+                        {{ value }}
+                    {% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+        <br>
+        <a href="/"><button>Analyze Another</button></a>
+    </div>
+<footer>
+    <p>&copy; 2025 Email Header Analyzer.</p>
+</footer>
+</body>
+</html>
