@@ -8,13 +8,13 @@ Developed as part of the **Cyber Security and Digital Forensics (CSDF)** curricu
 - Extract IP addresses, routing details, and metadata
 - Simple, clean, and responsive interface
 
+- # Screenshots
+![Email Header Analyzer - Input](screenshots/1.png)
+![Email Header Analyzer - Result](screenshots/2.png)
+
 # Installation
 ```bash\terminal  
 git clone https://github.com/shashank7770/email-header-analyzer.git
 cd email-header-analyzer
 pip install -r requirements.txt
 python app.py
-
-# Screenshots
-![Email Header Analyzer - Input](screenshots/1.png)
-![Email Header Analyzer - Result](screenshots/2.png)
